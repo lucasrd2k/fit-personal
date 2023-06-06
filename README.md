@@ -26,5 +26,13 @@
 ### Já prontas
     * api/cadastro/
     * api/login/
-    * 
-    * 
+    * api/aluno/cadastro/
+    * api/aluno/login/
+
+### Como rodar
+    * Criar um banco no mysql ou mariadb com o nome fitpersonal
+    * git clone https://github.com/lucasrd2k/fit-personal
+    * npm install
+    * npm run app
+      * Todas as tabelas serão criadas pelo sequelize
+    * As apis já podem ser utilizadas

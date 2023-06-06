@@ -4,7 +4,10 @@
   "description": "* [api/cadastro/](README.md#apifitpersonal) \r   * [api/login/](README.md#apifitpersonal)\r ## Funções do personal (Edição perfil, consulta perfil, cadastra treino, consulta treino, cadastra exercicio, consulta exercicio, cadastra aluno, consulta aluno) \r   * [api/usuario/](README.md#apifitpersonal)\r   * [api/usuario/\\<int:pk\\>/](README.md#apifitpersonal)\r   * [api/treino/](README.md#apifitpersonal)\r   * [api/treino/\\<int:pk\\>/](README.md#apifitpersonal)\r   * [api/treino/\\<int:pk\\>/exercicio/](README.md#apifitpersonal)\r   * [api/aluno/](README.md#apifitpersonal)\r   * [api/aluno/\\<int:pk\\>/](README.md#apifitpersonal)\r ## Funções do aluno (Login, logout, consulta personal, consulta treino, consulta exercicio, fazer pagamento, consulta pagamento)\r   * [api/aluno/login/](README.md#apifitpersonal)\r   * [api/usuario/\\<int:pk\\>/](README.md#apifitpersonal)\r   * [api/usuario/\\<int:pk\\>/treinos/](README.md#apifitpersonal)\r   * [api/usuario/\\<int:pk\\>/treinos/\\<int:pk\\>/](README.md#apifitpersonal)\r   * [api/usuario/\\<int:pk\\>/treinos/\\<int:pk\\>/exercicios/](README.md#apifitpersonal)\r   * [api/usuario/\\<int:pk\\>/treinos/\\<int:pk\\>/exercicios/\\<int:pk\\>/](README.md#apifitpersonal)\r   * [api/pagamento/](README.md#apifitpersonal)\r   * [api/pagamento/\\<int:pk\\>/](README.md#apifitpersonal)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "app": "node app.js",
+    "dev": "nodemon app.js",
+    "prod": "pm2 start app.js --name fitpersonal"
   },
   "keywords": [],
   "author": "",
