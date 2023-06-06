@@ -1,3 +1,5 @@
+
+const jwt = require('jsonwebtoken');
 function verifyJWTPersonal(req, res, next) {
     //Token bearer split
     const token = req.headers['authorization'].split(' ')[1];

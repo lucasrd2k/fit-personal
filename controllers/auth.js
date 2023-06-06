@@ -93,6 +93,7 @@ router.post("/cadastro", async (req, res) => {
         try {
             var hash = await bcrypt.hash(senha, 10);
             //Verificar se a foto foi enviada
+            let fileName = '../img/default.png';
             if (foto) {
                 const buffer = new Buffer.from(foto.split(',')[1], 'base64');
                 const $extension = foto.split(';')[0].split('/')[1];
@@ -102,13 +103,10 @@ router.post("/cadastro", async (req, res) => {
                         message: "Formato de imagem inválido!"
                     });
                 }
-                const fileName = `${new Date().getTime()}.${$extension}`;
+                fileName = `${new Date().getTime()}.${$extension}`;
                 const filePath = path.join(__dirname, '../img', fileName);
 
                 fs.writeFileSync(filePath, buffer);
-            }
-            else {
-                const fileName = '../img/default.png';
             }
             const user = await User.create({
                 nome: nome,
