@@ -7,8 +7,8 @@ const path = require('path');
 const { verifyJWTAluno, verifyJWTPersonal } = require('./controllers/verify');
 
 const Auth = require('./controllers/auth');
-const AuthAluno = require('./controllers/authAluno');
 const cadAluno = require('./controllers/cadAluno');
+const AuthAluno = require('./controllers/authAluno');
 
 const app = express();
 app.use(express.json());
