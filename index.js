@@ -9,6 +9,13 @@ const { verifyJWTAluno, verifyJWTPersonal } = require('./controllers/verify');
 const Auth = require('./controllers/auth');
 const cadAluno = require('./controllers/cadAluno');
 const AuthAluno = require('./controllers/authAluno');
+const Exercise = require('./models/Exercise');
+const Personal = require('./models/Sprint');
+const Training = require('./models/Training');
+require('./models/Associations');
+
+//comando pra ver as informações da tabela é como mesmo no mysql?
+//show tables;
 
 const app = express();
 app.use(express.json());

@@ -8,16 +8,6 @@ const path = require('path');
 
 const Aluno = require('../models/Student');
 
-//Criar um rota para cadastrar um aluno
-// nome
-// telefone
-// dt_nasc
-// email
-// senha
-// foto
-// status_pagamento
-// status
-// usuario
 router.post("/cadastro", async (req, res) => {
     const { nome, telefone, dt_nasc, email, senha, foto, status_pagamento, status, usuario } = req.body;
     try {
